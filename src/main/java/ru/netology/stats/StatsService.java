@@ -1,7 +1,7 @@
 package ru.netology.stats;
 
 public class StatsService {
-    public long calculateSum(long[] sales) { //1
+    public long calculateSum(long[] sales) {
         long sum = 0;
         for (long iten : sales) {
             sum += iten;
@@ -9,7 +9,7 @@ public class StatsService {
         return sum;
     }
 
-    public long findMin(long[] sales) {  //2
+    public long findMin(long[] sales) {
         long min = sales[0];
         for (long item : sales) {
             if (min > item) {
@@ -20,7 +20,7 @@ public class StatsService {
     }
 
 
-    public long findMax(long[] sales) {  //3
+    public long findMax(long[] sales) {
         long max = sales[0];
         for (long item : sales) {
             if (max < item) {
@@ -30,7 +30,7 @@ public class StatsService {
         return max;
     }
 
-    public long findMedi(long[] sales) {  //4
+    public long findMedi(long[] sales) {
         long sum = calculateSum(sales);
         long medi;
         medi = sum / sales.length;
@@ -38,7 +38,7 @@ public class StatsService {
         return medi;
     }
 
-    public long findMonthMax(long[] sales) {  //5
+    public long findMonthMax(long[] sales) {
         long month = sales[0];
         long count = 0;
         long number = 0;
@@ -53,7 +53,7 @@ public class StatsService {
         return number;
     }
 
-    public long findMonthMin(long[] sales) {  //6
+    public long findMonthMin(long[] sales) {
 
         long month = sales[0];
         long count = 0;
@@ -69,7 +69,7 @@ public class StatsService {
         return number;
     }
 
-    public long lowMedi(long[] sales) {   //7
+    public long lowMedi(long[] sales) {
         long count = 0;
         for (long item : sales) {
 
@@ -80,7 +80,7 @@ public class StatsService {
         return count;
     }
 
-    public long monthsHighMedi(long[] sales) {  //8
+    public long monthsHighMedi(long[] sales) {
         long count = 0;
 
         for (long item : sales) {
