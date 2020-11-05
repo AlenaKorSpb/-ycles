@@ -39,12 +39,12 @@ public class StatsService {
     }
 
     public long findMonthMax(long[] sales) {  //5
-        long month = sales [0];
+        long month = sales[0];
         long count = 0;
         long number = 0;
 
         for (long item : sales) {
-            count ++;
+            count++;
 
             if (item == findMax(sales)) {
                 number = count;
@@ -55,21 +55,21 @@ public class StatsService {
 
     public long findMonthMin(long[] sales) {  //6
 
-        long month = sales [0];
+        long month = sales[0];
         long count = 0;
         long number = 0;
 
         for (long item : sales) {
-            count ++;
+            count++;
             if (item == findMin(sales)) {
 
-                 number = count;
+                number = count;
             }
         }
         return number;
     }
 
-    public long LowMedi(long[] sales) {   //7
+    public long lowMedi(long[] sales) {   //7
         long count = 0;
         for (long item : sales) {
 
